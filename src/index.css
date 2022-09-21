@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
+
+@layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-1
+  }
+
+  h1 {
+    font-weight:800;
+  }
+
+  h2 {
+    font-weight:800;
+  }
+
+  h3 {
+    font-weight:400;
+  }
+
+  h4 {
+    font-weight:800;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Syne', sans-serif;
+  font-variant-numeric:lining-nums;
+  margin:0;
 }
