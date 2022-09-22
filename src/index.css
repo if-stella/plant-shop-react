@@ -5,8 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
 
 @layer base {
+  body {
+    background: #F4F7F7;
+  }
+
+  * {
+    font-family: 'Syne', sans-serif;
+    font-variant-numeric:lining-nums;
+    margin:0;
+  }
+
   button {
-    @apply border border-black rounded-xl px-5 py-1
+    @apply border border-[#182322] rounded-xl px-5 py-1
   }
 
   h1 {
@@ -24,10 +34,19 @@
   h4 {
     font-weight:800;
   }
-}
 
-* {
-  font-family: 'Syne', sans-serif;
-  font-variant-numeric:lining-nums;
-  margin:0;
+  p {
+  }
+
+  li {
+    color:#182322;
+  }
+
+  li:hover {
+    color:#558A76;
+  }
+
+  input {
+    color:#182322;
+  }
 }
