@@ -12,7 +12,7 @@ const Navbar = () => {
 const [nav, setNav] = useState(false)
 
   return (
-    <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4 fixed z-[5] w-full'>
+    <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4 fixed z-[5] w-full navbar'>
       {/* Left side */}
       <div className='flex items-center'>
         <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
@@ -35,7 +35,7 @@ const [nav, setNav] = useState(false)
         />
       </div>
       {/* Cart button */}
-      <button className='bg-[#558A76] border-[#558A76] text-white hidden md:flex items-center py-2 rounded-full'>
+      <button className='bg-[#558A76] border-[#558A76] text-[#F4F7F7] hidden md:flex items-center py-2 rounded-full'>
         <BsFillCartFill size={20} className='mr-2' /> Cart
       </button>
 

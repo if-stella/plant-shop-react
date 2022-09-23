@@ -49,4 +49,9 @@
   input {
     color:#182322;
   }
+
+  .navbar {
+    background: linear-gradient(180deg, rgba(16, 23, 23, 0.85) 0%, rgba(16, 23, 23, 0) 99%);
+    backdrop-filter: blur(2.5px);
+  }
 }
