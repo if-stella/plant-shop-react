@@ -5,7 +5,7 @@ const Hero = () => {
     <div className='max-w-[1640px] mx-auto'>
         <div className='max-h-[500px] relative'>
             {/* Overlay */}
-            <div className='absolute w-full h-full text-gray-200 max-h-[500px] bg-black/50 flex flex-col justify-center'>
+            <div className='absolute w-full h-full text-[#F4F7F7] max-h-[500px] bg-black/50 flex flex-col justify-center'>
                 <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal'>The <span className='text-[#558A76] font-bold'>nicest</span></h1>
                 <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal'> <span className='text-[#558A76] font-bold'>plants</span> in town.</h1>
             </div>
