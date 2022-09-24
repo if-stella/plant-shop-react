@@ -65,7 +65,6 @@ export const data = [
   },
 ];
 
-
 export const categories = [
   {
     id: 1,
@@ -77,7 +76,7 @@ export const categories = [
     id: 2,
     name: 'Bedroom',
     image:
-      'https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
+      'https://images.unsplash.com/photo-1501127122-f385ca6ddd9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80',
   },
   {
     id: 3,
@@ -90,11 +89,5 @@ export const categories = [
     name: 'Bathroom',
     image:
       'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80',
-  },
-  {
-    id: 5,
-    name: 'Balcony',
-    image:
-      'https://images.unsplash.com/photo-1519245942243-02935e6bdb76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80',
   },
 ];
