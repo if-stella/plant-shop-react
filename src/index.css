@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@200;400;700&display=swap');
 
 @layer base {
   body {
@@ -10,7 +10,7 @@
   }
 
   * {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-variant-numeric:lining-nums;
     margin:0;
   }
@@ -20,11 +20,11 @@
   }
 
   h1 {
-    font-weight:800;
+    font-weight:700;
   }
 
   h2 {
-    font-weight:800;
+    font-weight:700;
   }
 
   h3 {
@@ -32,10 +32,7 @@
   }
 
   h4 {
-    font-weight:800;
-  }
-
-  p {
+    font-weight:700;
   }
 
   li {
@@ -48,6 +45,10 @@
 
   input {
     color:#182322;
+  }
+
+  .serife {
+    font-family: 'DM Serif Display', serif;
   }
 
   .navbar {

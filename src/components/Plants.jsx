@@ -25,7 +25,7 @@ const Plants = () => {
       <h1 className='text-3xl sm:text-4xl text-center text-[#F4F7F7]'>Our precious plants</h1>
       <div className='flex flex-col md:flex-row justify-between'>
         <div className="mt-1 md:mt-0">
-          <p className='text-[1.25em] text-[#F4F7F7]'>Filter type</p>
+          <p className='text-[1.1em] text-[#F4F7F7]'>Filter type</p>
           <div className='flex flex-wrap gap-2'>
             <button
               onClick={() => setPlants(data)}
@@ -42,7 +42,7 @@ const Plants = () => {
           </div>
         </div>
         <div className="mt-2 md:mt-0">
-          <p className='text-[1.25em] text-left md:text-right text-[#F4F7F7]'>Filter Price</p>
+          <p className='text-[1.1em] text-left md:text-right text-[#F4F7F7]'>Filter Price</p>
           <div className='flex justfiy-between flex-wrap gap-2'>
             <button
               onClick={() => filterPrice('$')}
@@ -60,10 +60,6 @@ const Plants = () => {
               onClick={() => filterPrice('$$$$')}
               className='hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>$$$$
             </button>
-            <button
-              onClick={() => setPlants(data)}
-              className=' hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>Reset
-            </button>
           </div>
         </div>
       </div>
@@ -71,12 +67,12 @@ const Plants = () => {
         {plants.map((item, index) => (
           <div
             key={index}
-            className=' bg-[#F4F7F7] shadow-lg rounded-lg hover:scale-105 duration-300'
+            className=' bg-[#F4F7F7] shadow-lg rounded rounded-tl-3xl hover:scale-105 duration-300'
           >
             <img
               src={item.image}
               alt={item.name}
-              className='w-full h-[200px] object-cover rounded-t-lg'
+              className='w-full h-[200px] object-cover rounded-tr rounded-tl-3xl rounded-br-3xl'
             />
             <div className='flex justify-between align-center p-4'>
               <p className='font-bold text-[0.9em]'>{item.name}</p>

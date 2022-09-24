@@ -1,4 +1,5 @@
 import React from 'react';
+import Categories from './components/Categories';
 import Headlinecards from './components/Headlinecards';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Headlinecards />
       <Plants />
+      <Categories />
     </div>
   );
 }
