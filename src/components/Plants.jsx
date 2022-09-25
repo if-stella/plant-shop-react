@@ -21,44 +21,44 @@ const Plants = () => {
     );
   };
   return (
-    <div className='max-w-[1640px] m-auto px-6 py-12 bg-[#101717]'>
-      <h1 className='text-3xl sm:text-4xl text-center text-[#F4F7F7]'>Our precious plants</h1>
+    <div className='max-w-[1640px] m-auto px-6 py-12 bg-[#558A76]'>
+      <h1 className='text-3xl sm:text-4xl text-center text-[#D6E5E5]'>Our precious plants</h1>
       <div className='flex flex-col md:flex-row justify-between'>
         <div className="mt-1 md:mt-0">
           <p className='text-[1.1em] text-[#F4F7F7]'>Filter type</p>
-          <div className='flex flex-wrap gap-2'>
+          <div className='flex flex-wrap gap-2 mt-1'>
             <button
               onClick={() => setPlants(data)}
-              className='hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>All
+              className='hover:bg-[#101717] bg-white/10 border-[#D6E5E5] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7]'>All
             </button>
             <button
               onClick={() => filterType('sun')}
-              className='hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>Sun
+              className='hover:bg-[#101717] bg-white/10 border-[#D6E5E5] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7]'>Sun
             </button>
             <button
               onClick={() => filterType('shadow')}
-              className='hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>Shadow
+              className='hover:bg-[#101717] bg-white/10 border-[#D6E5E5] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7]'>Shadow
             </button>
           </div>
         </div>
         <div className="mt-2 md:mt-0">
           <p className='text-[1.1em] text-left md:text-right text-[#F4F7F7]'>Filter Price</p>
-          <div className='flex justfiy-between flex-wrap gap-2'>
+          <div className='flex justfiy-between flex-wrap gap-2 mt-1'>
             <button
               onClick={() => filterPrice('$')}
-              className=' hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>$
+              className=' hover:bg-[#101717] bg-white/10 border-[#D6E5E5] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7]'>$
             </button>
             <button
               onClick={() => filterPrice('$$')}
-              className=' hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>$$
+              className=' hover:bg-[#101717] bg-white/10 border-[#D6E5E5] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7]'>$$
             </button>
             <button
               onClick={() => filterPrice('$$$')}
-              className=' hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>$$$
+              className=' hover:bg-[#101717] bg-white/10 border-[#D6E5E5] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7]'>$$$
             </button>
             <button
               onClick={() => filterPrice('$$$$')}
-              className='hover:bg-[#558A76] border-[#558A76] text-[#F4F7F7] hover:text-[#F4F7F7]'>$$$$
+              className='hover:bg-[#101717] bg-white/10 border-[#D6E5E5] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7]'>$$$$
             </button>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Plants = () => {
         {plants.map((item, index) => (
           <div
             key={index}
-            className=' bg-[#F4F7F7] shadow-lg rounded rounded-tl-3xl hover:scale-105 duration-300'
+            className=' bg-[#D6E5E5] shadow-lg rounded rounded-tl-3xl hover:scale-105 duration-300'
           >
             <img
               src={item.image}
