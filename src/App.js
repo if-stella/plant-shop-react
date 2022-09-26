@@ -1,5 +1,6 @@
 import React from 'react';
 import Categories from './components/Categories';
+import Footer from './components/Footer';
 import Headlinecards from './components/Headlinecards';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
@@ -12,6 +13,7 @@ function App() {
       <Headlinecards />
       <Plants />
       <Categories />
+      <Footer />
     </div>
   );
 }

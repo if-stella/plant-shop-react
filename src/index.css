@@ -53,7 +53,7 @@
   }
 
   .navbar {
-    background: linear-gradient(180deg, rgba(16, 23, 23, 0.85) 0%, rgba(16, 23, 23, 0) 99%);
+    background: linear-gradient(180deg, rgba(16, 23, 23, 1) 0%, rgba(16, 23, 23, 0.75) 99%);
     backdrop-filter: blur(2.5px);
   }
 }
