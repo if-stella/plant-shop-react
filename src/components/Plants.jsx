@@ -22,7 +22,7 @@ const Plants = () => {
   };
   return (
     <div className='max-w-[1640px] m-auto px-6 py-12 bg-[#558A76]'>
-      <h1 className='text-3xl sm:text-4xl text-center text-[#D6E5E5]'>Our precious plants</h1>
+      <h3 className='text-3xl sm:text-4xl text-center text-[#D6E5E5]'>Our precious plants</h3>
       <div className='flex flex-col md:flex-row justify-between'>
         <div className="mt-1 md:mt-0">
           <p className='text-[1.1em] text-[#F4F7F7]'>Filter type</p>
@@ -67,17 +67,20 @@ const Plants = () => {
         {plants.map((item, index) => (
           <div
             key={index}
-            className=' bg-[#D6E5E5] shadow-lg rounded rounded-tl-3xl hover:scale-105 duration-300'
+            className=' bg-[#D6E5E5] shadow-lg rounded rounded-tl-3xl hover:scale-105 duration-300 relative'
           >
             <img
               src={item.image}
               alt={item.name}
               className='w-full h-[200px] object-cover rounded-tr rounded-tl-3xl rounded-br-3xl'
             />
+            <p className='bg-[#F4F7F7] text-[#558A76] text-2xl pl-2 pr-3 pt-2 pb-3 rounded-tl-3xl rounded-br-3xl absolute top-0 left-0'>
+              {item.icon}
+            </p>
             <div className='flex justify-between align-center p-4'>
-              <p className='font-bold text-[0.9em]'>{item.name}</p>
+              <p className='serife text-xl text-[#558A76] '>{item.name}</p>
               <p>
-                <span className='bg-[#558A76] text-white p-1 rounded-full'>
+                <span className='bg-[#BAD3D3] text-white px-3 py-2 rounded-full'>
                   {item.price}
                 </span>
               </p>
