@@ -1,20 +1,28 @@
 import React from 'react';
-import Categories from './components/Categories';
-import Footer from './components/Footer';
-import Headlinecards from './components/Headlinecards';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Plants from './components/Plants';
+import Account from "./pages/Account";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import ProtectedRoute from "./components/ProtectedRoute";
+import {AuthContextProvider} from './context/AuthContext';
+import { Routes, Route } from "react-router-dom";
+
+
+
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Headlinecards />
-      <Plants />
-      <Categories />
-      <Footer />
-    </div>
+    <>
+      <AuthContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/login' element={<Login />}/>
+          <Route path='/signup' element={<Signup />}/>
+          <Route path='/account' element={<ProtectedRoute><Account /></ProtectedRoute>}/>
+        </Routes>
+      </AuthContextProvider>
+    </>
   );
 }
 

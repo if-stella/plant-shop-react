@@ -17,7 +17,7 @@
   }
 
   button {
-    @apply border border-[#182322] rounded-xl px-5 py-1
+    @apply border border-[#182322] rounded-xl px-3 py-1
   }
 
   h1 {
