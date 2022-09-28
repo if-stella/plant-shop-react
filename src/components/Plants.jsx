@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {data} from '../data/data.js'
+import { BsCartPlus, BsCartDash } from 'react-icons/bs';
 
 const Plants = () => {
 
@@ -67,23 +68,27 @@ const Plants = () => {
         {plants.map((item, index) => (
           <div
             key={index}
-            className=' bg-[#D6E5E5] shadow-lg rounded rounded-tl-3xl hover:scale-105 duration-300 relative'
+            className=' bg-[#D6E5E5] shadow-lg rounded rounded-tl-3xl rounded-br-[30px] hover:scale-105 duration-300 relative'
           >
             <img
               src={item.image}
               alt={item.name}
-              className='w-full h-[200px] object-cover rounded-tr rounded-tl-3xl rounded-br-3xl'
+              className='w-full h-[200px] object-cover rounded-tr rounded-tl-3xl rounded-bl-3xl rounded-br-3xl'
             />
-            <p className='bg-[#F4F7F7] text-[#558A76] text-2xl pl-2 pr-3 pt-2 pb-3 rounded-tl-3xl rounded-br-3xl absolute top-0 left-0'>
+            <p className='bg-[#F4F7F7] text-[#558A76] text-2xl pl-2 pr-3 py-2 rounded-tr-3xl rounded-br-3xl absolute top-12 left-0'>
               {item.icon}
             </p>
-            <div className='flex justify-between align-center p-4'>
-              <p className='serife text-xl text-[#558A76] '>{item.name}</p>
-              <p>
-                <span className='bg-[#BAD3D3] text-white px-3 py-2 rounded-full'>
-                  {item.price}
-                </span>
+            <p>
+              <span className='bg-[#F4F7F7] text-[#558A76] text-l px-3 py-2 rounded-tl-3xl rounded-br-3xl absolute left-0 top-0'>
+                {item.price}
+              </span>
               </p>
+            <div className='flex justify-between align-center p-4 relative '>
+              <p className='serife text-l sm:text-xl text-[#558A76]'>{item.name}</p>
+              <div
+              className='absolute pl-4 pr-[1.1rem] py-2 bottom-0 right-0 hover:bg-[#000] bg-[#101717] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-3xl rounded-br-3xl'>
+              <BsCartPlus size={24} />
+              </div>
             </div>
           </div>
         ))}
