@@ -29,7 +29,7 @@ const Login = () => {
     <div className="fixed w-full px-4 py-24 z-10">
       <div className="max-w-[480px] h-[480px] mx-auto bg-black/75 text-[#F4F7F7] rounded-xl">
         <div className="max-w-[343px] mx-auto flex flex-col h-[480px] justify-center">
-          <h1 className="text-3xl font-bold">Welcome back!</h1>
+          <h1 className="text-3xl serife">Welcome back!</h1>
           {error ? <p className='p-3 bg-red-400 my-2'>{error}</p> : null}
           <form onSubmit={handleSubmit} className="w-full flex flex-col py-4">
             <input onChange={(e) => setEmail(e.target.value)} className="rounded p-3 my-2 bg-gray-400 focus:outline-0 focus:ring-0" type="email" placeholder="Email" autoComplete="email"/>
@@ -38,7 +38,7 @@ const Login = () => {
           </form>
           <p className="pt-3">
               <span className='text-gray-400'>
-                New to <strong className="text-gray-300">Little leaf</strong>?
+                New to Little leaf?
               </span>{' '}
               <Link to='/signup' className="font-semibold hover:text-[#558A76]">Sign up</Link>
               </p>
