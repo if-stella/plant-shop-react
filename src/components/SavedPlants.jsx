@@ -25,11 +25,11 @@ const SavedPlants = () => {
     });
   }, [user?.email]);
 
-  const movieRef = doc(db, 'users', `${user?.email}`)
-  const deleteShow = async (passedID) => {
+  const plantRef = doc(db, 'users', `${user?.email}`)
+  const deletePlant = async (passedID) => {
       try {
         const result = plants.filter((item) => item.id !== passedID)
-        await updateDoc(movieRef, {
+        await updateDoc(plantRef, {
             savedPlants: result
         })
       } catch (error) {
@@ -55,14 +55,14 @@ const SavedPlants = () => {
             >
               <img
                 className='w-full h-auto block'
-                src={`https://image.tmdb.org/t/p/w500/${item?.img}`}
-                alt={item?.title}
+                src={item?.image}
+                alt={item?.name}
               />
               <div className='absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white'>
                 <p className='white-space-normal text-[10px] md:text-sm lg:text-lg font-bold flex justify-center items-center h-full text-center'>
                   {item?.title}
                 </p>
-                <p onClick={()=> deleteShow(item.id)} className='absolute text-gray-300 hover:text-red-600 top-2 left-3 sm:top-4 sm:left-5'><ImCross className="w-3 h-3 sm:w-5 sm:h-5"/></p>
+                <p onClick={()=> deletePlant(item.id)} className='absolute text-gray-300 hover:text-red-600 top-2 left-3 sm:top-4 sm:left-5'><ImCross className="w-3 h-3 sm:w-5 sm:h-5"/></p>
               </div>
             </div>
           ))}

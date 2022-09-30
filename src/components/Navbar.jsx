@@ -25,7 +25,7 @@ const handleLogout = async () => {
 };
 
   return (
-    <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4 fixed z-[5] w-full navbar'>
+    <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4 fixed z-[15] w-full navbar'>
       <div className='flex items-center'>
         <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
           <AiOutlineMenu size={25} className="text-[#BAD3D3]"/>

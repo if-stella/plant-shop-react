@@ -26,7 +26,7 @@ const Signup = () => {
     <div className="fixed w-full px-4 py-24 z-10">
       <div className="max-w-[480px] h-[480px] mx-auto  bg-black/75 rounded-xl text-[#F4F7F7]">
         <div className="max-w-[343px] mx-auto flex flex-col h-[480px] justify-center">
-          <h1 className="text-3xl font-bold">Hello plantlover!</h1>
+          <h1 className="text-3xl serife">Hello, plantlover!</h1>
           <form onSubmit={handleSubmit} className="w-full flex flex-col py-4">
             <input onChange={(e) => setEmail(e.target.value)} className="rounded p-3 my-2 bg-gray-400 focus:outline-0 focus:ring-0" type="email" placeholder="Email" autoComplete="email"/>
             <input onChange={(e) => setPassword(e.target.value)} className="rounded p-3 my-2 bg-gray-400 focus:outline-0 focus:ring-0" type="password" placeholder="Password" autoComplete="current-password"/>
