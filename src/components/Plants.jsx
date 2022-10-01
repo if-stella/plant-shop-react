@@ -48,8 +48,8 @@ const Plants = ({item}) => {
     );
   };
   return (
-    <div className='max-w-[1640px] m-auto px-6 py-20 bg-[#D6E5E5]'>
-      <h3 className='text-3xl sm:text-4xl text-center text-[#558A76] serife'>Our precious plants</h3>
+    <div className='m-auto px-6 xl:px-20 py-20 bg-[#D6E5E5]'>
+      <h3 className='text-[2.25em] md:text-[3.5em] text-center text-[#558A76] serife'>Our precious plants</h3>
       <div className='flex flex-col md:flex-row justify-between'>
         <div className="mt-1 md:mt-0">
           <p className='text-[1.1em] text-[#182322]'>Filter type</p>
