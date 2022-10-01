@@ -25,7 +25,7 @@ const handleLogout = async () => {
 };
 
   return (
-    <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4 fixed z-[15] w-full navbar'>
+    <div className='mx-auto flex justify-between items-center p-4  xl:px-20 fixed z-[15] w-full navbar'>
       <div className='flex items-center'>
         <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
           <AiOutlineMenu size={25} className="text-[#BAD3D3]"/>
@@ -74,7 +74,7 @@ const handleLogout = async () => {
         />
         <div className="flex items-center gap-2 p-4">
         <PlantIcon className="h-6"/>
-        <h2 className="text-[#558A76]">Little leaf</h2>
+        <h3 className="text-[#558A76] font-bold">Little leaf</h3>
         </div>
         <nav>
             <ul className='flex flex-col p-4'>
