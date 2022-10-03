@@ -1,4 +1,4 @@
-![Little leaf](https://res.cloudinary.com/djlggawlm/image/upload/v1664566772/Frame_3_xpmx6r.png)
+![Little leaf](https://res.cloudinary.com/djlggawlm/image/upload/v1664831242/Frame_3_taop99.png)
 
 # <strong>Little leaf</strong> – A fictitious webshop for plants, built with React.js & Tailwind
 
