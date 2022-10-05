@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Headlinecards from '../components/Headlinecards';
 import Hero from '../components/Hero';
 import Plants from '../components/Plants';
+import Revealcard from '../components/Revealcard';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Headlinecards />
       <Plants />
       <Categories />
+      <Revealcard />
       <Footer />
     </div>
   )
