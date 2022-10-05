@@ -44,4 +44,68 @@
     background: linear-gradient(180deg, rgba(16, 23, 23, 1) 0%, rgba(16, 23, 23, 0.75) 99%);
     backdrop-filter: blur(2.5px);
   }
+
+#reveal1 {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664836848/Little%20leaf/Frame_9_ngccox.png");
+  background-size:cover;
+  background-repeat:none;
+}
+
+#reveal1:hover {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664836844/Little%20leaf/Frame_12_cuppiy.png");
+  opacity: 1;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+#reveal2 {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664836848/Little%20leaf/Frame_11_f0l7tr.png");
+  background-size:cover;
+  background-repeat:none;
+}
+
+#reveal2:hover {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664836844/Little%20leaf/Frame_14_hfuim3.png");
+  opacity: 1;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+#reveal3 {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664836839/Little%20leaf/Frame_16_m6dosv.png");
+  background-size:cover;
+  background-repeat:none;
+}
+
+#reveal3:hover {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664836839/Little%20leaf/Frame_15_kyhmcn.png");
+  opacity: 1;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+#reveal4 {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664962813/Little%20leaf/Frame_19_y6jd7d.png");
+  background-size:cover;
+  background-repeat:none;
+}
+
+#reveal4:hover {
+  background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664962812/Little%20leaf/Frame_20_zyist6.png");
+  opacity: 1;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
 }
