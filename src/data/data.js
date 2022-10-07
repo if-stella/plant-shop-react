@@ -112,22 +112,4 @@ export const categories = [
     image:
       'https://images.unsplash.com/photo-1594295909629-b8abb39effd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
-  {
-    id: 7,
-    name: 'Work room',
-    image:
-      'https://images.pexels.com/photos/3653849/pexels-photo-3653849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  },
-  {
-    id: 8,
-    name: 'Conservatory',
-    image:
-      'https://images.pexels.com/photos/7663983/pexels-photo-7663983.jpeg',
-  },
-  {
-    id: 9,
-    name: 'Garden',
-    image:
-      'https://images.pexels.com/photos/5490346/pexels-photo-5490346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  },
 ];
