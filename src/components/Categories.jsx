@@ -12,7 +12,7 @@ const Categories = () => {
             <div className='absolute group w-full h-full bg-[#202E2D]/80 hover:bg-black/0 rounded text-[#F4F7F7] flex flex-col justify-center shadow-xl'>
               <h3 className='group-hover:text-transparent text-center serife text-3xl sm:text-4xl'>{item.name}</h3>
             </div>
-            <img src={item.image} alt={item.name} className='max-h-[560px] md:max-h-[480px] w-full object-cover rounded' />
+            <img src={item.image} alt={item.name} className='max-h-[560px] md:max-h-[200px] w-full object-cover rounded' />
           </div>
         ))}
       </div>
