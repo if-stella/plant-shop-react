@@ -1,5 +1,4 @@
 import React from 'react'
-import Categories from '../components/Categories';
 import Footer from '../components/Footer';
 import Herolarge from '../components/Herolarge';
 import Neckbanner from '../components/Neckbanner';
@@ -12,7 +11,6 @@ const Home = () => {
       <Herolarge />
       <Neckbanner />
       <Plants />
-      <Categories />
       <Revealcard />
       <Footer />
     </div>
