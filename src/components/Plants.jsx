@@ -48,7 +48,7 @@ const Plants = ({item}) => {
     );
   };
   return (
-    <div className='m-auto px-6 xl:px-20 py-10 bg-[#D6E5E5] relative z-[6]'>
+    <div className='m-auto px-6 xl:px-20 py-10 relative z-[6]'>
       <h3 className='text-[2.25em] md:text-[3.5em] text-center text-[#558A76] serife'>Our precious plants</h3>
       <div className='flex flex-col md:flex-row justify-between'>
         <div className="mt-1 md:mt-0">
@@ -94,13 +94,14 @@ const Plants = ({item}) => {
         {plants.map((item, index) => (
           <div
             key={index}
-            className=' bg-[#D6E5E5] shadow-xl rounded rounded-tl-3xl rounded-br-[30px] hover:scale-105 duration-300 relative'
+            className=' bg-[#F4F7F7] shadow-l rounded rounded-tl-3xl rounded-tr-3xl rounded-br-2xl hover:scale-105 duration-300 relative'
           >
             <img
               src={item.image}
               alt={item.name}
-              className='w-full h-[200px] object-cover rounded-tr rounded-tl-3xl rounded-bl-3xl rounded-br-3xl'
+              className='w-full h-[200px] object-cover rounded-tr-3xl rounded-tl-3xl'
             />
+            <div className="bg-gradient-to-t from-[#558A76] w-full h-[201px] absolute top-0 left-0 opacity-50"></div>
             <p className='bg-white/90 text-[#558A76] text-2xl pl-2 pr-3 py-2 rounded-tr-2xl rounded-br-2xl absolute top-12 left-0'>
               {item.icon}
             </p>
@@ -112,7 +113,7 @@ const Plants = ({item}) => {
             <div className='flex justify-between align-center p-4 relative '>
               <p className='serife text-l sm:text-xl text-[#558A76]'>{item.name}</p>
               <div onClick={savePlant}
-              className='absolute pl-4 pr-[1.1rem] py-2 bottom-0 right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-3xl rounded-br-3xl'>
+              className='absolute pl-4 pr-[1.1rem] py-2 bottom-0 right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-xl rounded-br-xl'>
               {like ? (
               <>
               <BsCartDash size={24} />
