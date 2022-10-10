@@ -94,7 +94,7 @@ const Plants = ({item}) => {
         {plants.map((item, index) => (
           <div
             key={index}
-            className=' bg-white/30 rounded shadow-l hover:scale-105 duration-300 relative'
+            className=' bg-white/30 hover:bg-white/60  rounded shadow-l hover:scale-105 duration-300 relative'
           >
             <img
               src={item.image}
