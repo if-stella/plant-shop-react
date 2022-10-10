@@ -94,26 +94,24 @@ const Plants = ({item}) => {
         {plants.map((item, index) => (
           <div
             key={index}
-            className=' bg-[#F4F7F7] shadow-l rounded rounded-tl-3xl rounded-tr-3xl rounded-br-2xl hover:scale-105 duration-300 relative'
+            className=' bg-white/30 rounded shadow-l hover:scale-105 duration-300 relative'
           >
             <img
               src={item.image}
               alt={item.name}
-              className='w-full h-[200px] object-cover rounded-tr-3xl rounded-tl-3xl'
+              className='w-full h-[200px] object-cover rounded-tl-[3px] rounded-tr-[3px]'
             />
             <div className="bg-gradient-to-t from-[#558A76] w-full h-[201px] absolute top-0 left-0 opacity-50"></div>
             <p className='bg-white/90 text-[#558A76] text-2xl pl-2 pr-3 py-2 rounded-tr-2xl rounded-br-2xl absolute top-12 left-0'>
               {item.icon}
             </p>
             <p>
-              <span className='bg-[#F4F7F7] text-[#558A76] text-l px-3 py-2 rounded-tl-[22px] rounded-br-3xl absolute left-0 top-0'>
+              <span className='bg-[#F4F7F7] text-[#558A76] text-l pl-3 pr-4 py-2 rounded-tl-[2px] rounded-br-3xl absolute left-0 top-0'>
                 {item.price}
               </span>
               </p>
-            <div className='flex justify-between align-center p-4 relative '>
-              <p className='serife text-l sm:text-xl text-[#558A76]'>{item.name}</p>
               <div onClick={savePlant}
-              className='absolute pl-4 pr-[1.1rem] py-2 bottom-0 right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-xl rounded-br-xl'>
+              className='absolute pl-4 pr-[1.1rem] py-2 top-[180px] right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-xl rounded-bl-xl'>
               {like ? (
               <>
               <BsCartDash size={24} />
@@ -124,6 +122,9 @@ const Plants = ({item}) => {
               </>
                )}
               </div>
+            <div className='flex p-4 relative flex-col gap-1'>
+              <p className='serife text-l sm:text-[1.25em] leading-6 text-[#558A76]'>{item.name}</p>
+              <p className='text-[15px]'>{item.text}</p>
             </div>
           </div>
         ))}
