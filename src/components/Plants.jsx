@@ -111,7 +111,7 @@ const Plants = ({item}) => {
               </span>
               </p>
               <div onClick={savePlant}
-              className='absolute pl-4 pr-[1.1rem] py-2 top-[180px] right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-xl rounded-bl-xl'>
+              className='absolute pl-4 pr-[1.1rem] py-2 top-[180px] right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-xl rounded-bl-xl z-[10]'>
               {like ? (
               <>
               <BsCartDash size={24} />
