@@ -36,16 +36,6 @@ const handleLogout = async () => {
         </Link>
       </div>
 
-      {/*
-      <div className='bg-[#BAD3D3] rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
-        <AiOutlineSearch size={25} className="text-[#558A76]" />
-        <input
-          className='bg-transparent p-2 w-full focus:outline-none'
-          type='text'
-          placeholder='Search for plants...'
-        />
-      </div> */}
-
       <div>
       {user?.email ? (
         <div className="flex items-center gap-6">
