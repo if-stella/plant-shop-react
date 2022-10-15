@@ -22,7 +22,7 @@ const Plants = ({item}) => {
     );
   };
   return (
-    <div className='m-auto px-6 xl:px-20 py-10 relative z-[6]'>
+    <div className='m-auto px-6 xl:px-20 py-10 relative z-[6] bg-[#E7E9EE]'>
       <h3 className='text-[2.25em] md:text-[3.5em] text-center text-[#558A76] serife'>Our precious plants</h3>
       <div className='flex flex-col md:flex-row justify-between'>
         <div className="mt-1 md:mt-0">
@@ -64,7 +64,7 @@ const Plants = ({item}) => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-4'>
         {plants.map((item, id) => (
           <Plantcard key={id} item={item} />
         ))}
