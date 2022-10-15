@@ -4,6 +4,7 @@ import SavedPlants from '../components/SavedPlants';
 const Account = () => {
   return (
 
+
     <div className="account-container">
       <div className='w-full text-white'>
         <img
@@ -14,6 +15,9 @@ const Account = () => {
         <div className='bg-black/60 fixed left-0 w-full h-[400px] top-0'></div>
         <div className='absolute top-[20%] p-4 md:p-8'>
           <h1 className='text-4xl md:text-6xl serife'>Your plants</h1>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
+              <SavedPlants />
+            </div>
         </div>
       </div>
     </div>

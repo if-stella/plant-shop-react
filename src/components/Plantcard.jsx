@@ -31,13 +31,13 @@ const Plantcard = ( {item} ) => {
   };
 
   return (
-    <div className=' bg-white/30 hover:bg-white/60  rounded shadow-l hover:scale-105 duration-300 relative'>
+    <div className=' bg-white/30 hover:bg-white/60  rounded shadow-l hover:scale-105 duration-300 relative group'>
       <img
         src={item.image}
         alt={item.name}
         className='w-full h-[200px] object-cover rounded-tl-[3px] rounded-tr-[3px]'
       />
-      <div className="bg-gradient-to-t from-[#558A76] w-full h-[201px] absolute top-0 left-0 opacity-50"></div>
+      <div className="bg-gradient-to-t from-[#558A76] w-full h-[200px] absolute top-0 left-0 opacity-50"></div>
       <p className='bg-white/90 text-[#558A76] text-2xl pl-2 pr-3 py-2 rounded-tr-2xl rounded-br-2xl absolute top-12 left-0'>
         {item.icon}
       </p>
@@ -46,11 +46,11 @@ const Plantcard = ( {item} ) => {
           {item.price}
         </span>
       </p>
-      <div onClick={savePlant} className='absolute pl-4 pr-[1.1rem] py-2 top-[180px] right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] flex items-center rounded-tl-xl rounded-bl-xl z-[10]'>
+      <div onClick={savePlant} className='hidden group-hover:flex absolute pl-4 pr-[1.1rem] py-2 top-[180px] right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] items-center rounded-tl-xl rounded-bl-xl z-[10]'>
         {like ? (<><BsCartDash size={24} /></>) : (<><BsCartPlus size={24} /></>)}
       </div>
       <div className='flex p-4 relative flex-col gap-1'>
-      <p className='serife text-l sm:text-[1.25em] leading-6 text-[#558A76]'>{item.name}</p>
+      <p className='serife text-xl sm:text-2xl leading-6 text-[#558A76]'>{item.name}</p>
       <p className='text-[15px]'>{item.text}</p>
     </div>
   </div>
