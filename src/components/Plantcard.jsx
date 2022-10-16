@@ -50,8 +50,12 @@ const Plantcard = ( {item} ) => {
         {like ? (<><BsCartDash size={24} /></>) : (<><BsCartPlus size={24} /></>)}
       </div>
       <div className='flex p-4 relative flex-col gap-1'>
-      <p className='serife text-xl sm:text-2xl leading-6 text-[#558A76]'>{item.name}</p>
+      <div className='absolute text-xl sm:text-2xl text-[#558A76] text-right -rotate-90 -left-[74px] top-[105px] w-[200px] h-[32px]'><p className="serife">{item.name}</p></div>
+      <div className="ml-10">
+        <em className='text-xl leading-6 text-[#558A76]'>{item.latin}</em>
       <p className='text-[15px]'>{item.text}</p>
+      </div>
+
     </div>
   </div>
   )
