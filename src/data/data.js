@@ -3,7 +3,8 @@ import {BsSun ,BsCloudSunFill} from 'react-icons/bs';
 export const data = [
   {
     id: 1,
-    name: 'Fiddle-leaf fig',
+    latin: 'Fiddle-leaf fig',
+    name: 'Fidel',
     category: 'sun',
     image:
       'https://images.unsplash.com/photo-1602648707943-94aff309c088?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmlkZGxlJTIwbGVhZiUyMGZpZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
@@ -13,7 +14,8 @@ export const data = [
   },
   {
     id: 2,
-    name: 'Monstera deliciosa',
+    name: 'Mona',
+    latin: 'Monstera deliciosa',
     category: 'shadow',
     image:
       'https://images.unsplash.com/photo-1594135019404-8811e4f22d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
@@ -23,7 +25,8 @@ export const data = [
   },
   {
     id: 3,
-    name: 'Calathea Mayocana',
+    name: 'Yana',
+    latin: 'Calathea Makoyana',
     category: 'shadow',
     image:
       'https://images.unsplash.com/photo-1601489333662-97b194e8a356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
@@ -33,7 +36,8 @@ export const data = [
   },
   {
     id: 4,
-    name: 'Ficus robusta',
+    name: 'Robert',
+    latin: 'Ficus robusta',
     category: 'shadow',
     image:
       'https://images.unsplash.com/photo-1597055181413-65e08a46a708?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80',
@@ -43,7 +47,8 @@ export const data = [
   },
   {
     id: 5,
-    name: 'Pancake plant',
+    name: 'Lea',
+    latin: 'Pilea peperomioides',
     category: 'sun',
     image:
       'https://images.unsplash.com/photo-1598880942562-8cf3cf728312?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
@@ -53,7 +58,8 @@ export const data = [
   },
   {
     id: 6,
-    name: 'Calathea crocata ',
+    name: 'Corinna',
+    latin: 'Calathea crocata',
     category: 'shadow',
     image:
       'https://images.unsplash.com/photo-1617181514110-5dfbc3849f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
@@ -63,7 +69,8 @@ export const data = [
   },
   {
     id: 7,
-    name: 'Parlour palm',
+    name: 'Pamela',
+    latin: 'Chamaedorea elegans',
     category: 'sun',
     image:
       'https://images.unsplash.com/photo-1598880940675-390f296b2ba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFybG91ciUyMHBhbG18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
@@ -73,7 +80,8 @@ export const data = [
   },
   {
     id: 8,
-    name: 'Ficus elastica',
+    name:'Elisabeth',
+    latin: 'Ficus elastica',
     category: 'sun',
     image:
       'https://images.unsplash.com/photo-1623032693199-e9abd35e0a98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
@@ -83,7 +91,8 @@ export const data = [
   },
   {
     id: 9,
-    name: 'Anthurium scherzerianum',
+    name: 'Arthur',
+    latin: 'Anthurium scherzerianum',
     category: 'sun',
     image:
       'https://images.unsplash.com/photo-1610354559669-f32fe0707a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
@@ -93,7 +102,8 @@ export const data = [
   },
   {
     id: 10,
-    name: 'Philodendron squamiferum',
+    name: 'Phil',
+    latin: 'Philodendron squamiferum',
     category: 'sun',
     image:
       'https://images.unsplash.com/photo-1610976584704-2c233a28b573?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80',
@@ -103,7 +113,8 @@ export const data = [
   },
   {
     id: 11,
-    name: 'Monstera deliciosa variegata',
+    name: 'Valerie',
+    latin: 'Monstera deliciosa variegata',
     category: 'shadow',
     image:
       'https://images.unsplash.com/photo-1612189209836-a506ffba6ff4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
@@ -113,7 +124,8 @@ export const data = [
   },
   {
     id: 12,
-    name: 'Anthurium clarinervium',
+    name: 'Clara',
+    latin: 'Anthurium clarinervium',
     category: 'shadow',
     image:
       'https://images.unsplash.com/photo-1609340942215-4f9bfe38593f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80',
