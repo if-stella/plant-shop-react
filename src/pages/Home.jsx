@@ -7,7 +7,7 @@ import Revealcard from '../components/Revealcard';
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container overflow-x-hidden">
       <Herolarge />
       <Neckbanner />
       <Plants />
