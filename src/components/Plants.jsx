@@ -22,7 +22,7 @@ const Plants = ({item}) => {
     );
   };
   return (
-    <div className='m-auto px-6 xl:px-20 py-10 relative z-[6] bg-[#E7E9EE]'>
+    <div className='m-auto px-6 xl:px-20 py-10 relative z-[6] graingrey'>
       <h3 className='text-[2.25em] md:text-[3.5em] text-center text-[#558A76] serife'>Our precious plants</h3>
       <div className='flex flex-col md:flex-row justify-between'>
         <div className="mt-1 md:mt-0">

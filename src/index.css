@@ -45,6 +45,10 @@
     backdrop-filter: blur(2.5px);
   }
 
+  .graingrey {
+      background: url(../src/assets/noisegrey.png);
+  }
+
 #reveal2 {
   background-image: url("https://res.cloudinary.com/djlggawlm/image/upload/v1664836848/Little%20leaf/Frame_9_ngccox.png");
   background-size:cover;
