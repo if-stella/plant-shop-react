@@ -87,7 +87,7 @@ export const data = [
       'https://images.unsplash.com/photo-1623032693199-e9abd35e0a98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
     price: '$',
     icon:<BsSun />,
-    text:"Also called Indian rubber tree, its tapped latex was once an important source of natural rubber.",
+    text:"Also called Indian rubber tree, its tapped latex was once an important source of natural rubber. It has broad shiny oval leaves.",
   },
   {
     id: 9,

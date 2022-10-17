@@ -31,7 +31,7 @@ const Plantcard = ( {item} ) => {
   };
 
   return (
-    <div className=' bg-white/30 hover:bg-white/60  rounded shadow-l hover:scale-105 duration-300 relative group'>
+    <div className=' bg-white/30 hover:bg-white/60  rounded hover:shadow-xl hover:scale-105 duration-300 relative group'>
       <img
         src={item.image}
         alt={item.name}
@@ -50,9 +50,9 @@ const Plantcard = ( {item} ) => {
         {like ? (<><BsCartDash size={24} /></>) : (<><BsCartPlus size={24} /></>)}
       </div>
       <div className='flex p-4 relative flex-col gap-1'>
-      <div className='absolute text-xl sm:text-2xl text-[#558A76] text-right -rotate-90 -left-[74px] top-[105px] w-[200px] h-[32px]'><p className="serife">{item.name}</p></div>
-      <div className="ml-10">
-        <em className='text-xl leading-6 text-[#558A76]'>{item.latin}</em>
+      <div className='absolute text-2xl sm:text-3xl text-[#BAD3D3] text-right -rotate-90 -left-[76px] top-[105px] w-[200px] h-[32px]'><p className="serife">{item.name}</p></div>
+      <div className="ml-8">
+        <em className='text-[1.1em] sm:text-xl leading-6 text-[#558A76]'>{item.latin}</em>
       <p className='text-[15px]'>{item.text}</p>
       </div>
 

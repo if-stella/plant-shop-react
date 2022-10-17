@@ -13,12 +13,13 @@ const Loader = () => {
       play
       className="plantload"
     />
+    <div className="box"></div>
       <h5>
         <Typewriter
         options={{
           strings: ['Arranging all the plants...'],
           autoStart: true,
-          loop: true,
+          loop: false,
         }}
       /></h5>
     </div>
