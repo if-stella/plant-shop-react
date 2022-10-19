@@ -13,7 +13,6 @@ const Loader = () => {
       play
       className="plantload"
     />
-    <div className="box"></div>
       <h5>
         <Typewriter
         options={{
