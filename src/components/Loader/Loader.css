@@ -11,19 +11,14 @@
   flex-direction:column;
   gap:0.5em;
   overflow-x:hidden;
-  padding:18em 3em;
 }
 
 .plantload {
   width: 500px;
+  height: 500px;
   mix-blend-mode: multiply;
   position:absolute;
   animation:walk 6.1s linear infinite;
-  top:6em;
-}
-
-.box {
-  height:500px;
 }
 
 .loader h5 {
@@ -32,6 +27,7 @@
   line-height:1.15em;
   max-width:500px;
   color:#182322;
+  padding-top:450px;
 }
 
 @keyframes walk {
@@ -49,29 +45,22 @@
     top:2em;
   }
 
-  .loader {
-    padding:16em 3em;
+  .loader h5 {
+    padding-top:500px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .loader {
-    padding:330px 2em;
-  }
-
   .loader h5 {
       font-size:1.5em;
       line-height:1em;
       max-width:343px;
+      padding-top:470px;
   }
 
   .plantload {
     width: 375px;
     top:4em;
-  }
-
-  .box {
-    height:375px;
   }
 
   @keyframes walk {
