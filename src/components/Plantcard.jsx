@@ -16,15 +16,19 @@ const Plantcard = ( {item} ) => {
   const savePlant = async () => {
     if (user?.email) {
       setLike(!like);
-      setSaved(true);
+      setSaved(!saved);
+      alert(`${item.name}, the ${item.latin} was added to your cart!`);
       await updateDoc(plantID, {
         savedPlants: arrayUnion({
           id: item.id,
           name: item.name,
-          image: item.image,
-          icon: item.icon,
+          text: item.text,
+          latin: item.latin,
+          price: item.price,
+          category: item.category,
         }),
       });
+
     } else {
       alert('Please log in to add a plant to your cart!');
     }
@@ -33,27 +37,27 @@ const Plantcard = ( {item} ) => {
   return (
     <div className=' bg-white/30 hover:bg-white/60  rounded hover:shadow-xl hover:scale-105 duration-300 relative group'>
       <img
-        src={item.image}
-        alt={item.name}
+        src={item?.image}
+        alt={item?.name}
         className='w-full h-[200px] object-cover rounded-tl-[3px] rounded-tr-[3px]'
       />
       <div className="bg-gradient-to-t from-[#558A76] w-full h-[200px] absolute top-0 left-0 opacity-50"></div>
       <p className='bg-white/90 text-[#558A76] text-2xl pl-2 pr-3 py-2 rounded-tr-2xl rounded-br-2xl absolute top-12 left-0'>
-        {item.icon}
+        {item?.icon}
       </p>
       <p>
         <span className='bg-[#F4F7F7] text-[#558A76] text-l pl-3 pr-4 py-2 rounded-tl-[2px] rounded-br-3xl absolute left-0 top-0'>
-          {item.price}
+          {item?.price}
         </span>
       </p>
       <div onClick={savePlant} className='hidden group-hover:flex absolute pl-4 pr-[1.1rem] py-2 top-[180px] right-0 hover:bg-[#101717] bg-[#558A76] border-[#558A76] hover:border-[#101717] text-[#D6E5E5] hover:text-[#F4F7F7] items-center rounded-tl-xl rounded-bl-xl z-[10]'>
         {like ? (<><BsCartDash size={24} /></>) : (<><BsCartPlus size={24} /></>)}
       </div>
       <div className='flex p-4 relative flex-col gap-1'>
-      <div className='absolute text-2xl sm:text-3xl text-[#BAD3D3] text-right -rotate-90 -left-[76px] top-[105px] w-[200px] h-[32px]'><p className="serife">{item.name}</p></div>
+      <div className='absolute text-2xl sm:text-3xl text-[#BAD3D3] text-right -rotate-90 -left-[76px] top-[105px] w-[200px] h-[32px]'><p className="serife">{item?.name}</p></div>
       <div className="ml-8">
-        <em className='text-[1.1em] sm:text-xl leading-6 text-[#558A76]'>{item.latin}</em>
-      <p className='text-[15px]'>{item.text}</p>
+        <em className='text-[1.1em] sm:text-xl leading-6 text-[#558A76]'>{item?.latin}</em>
+      <p className='text-[15px]'>{item?.text}</p>
       </div>
 
     </div>
