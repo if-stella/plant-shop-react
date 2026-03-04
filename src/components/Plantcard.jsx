@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { BsCartPlus, BsCartDash } from 'react-icons/bs';
 import { UserAuth } from '../context/AuthContext';
 import { db } from '../firebase';
-import {data} from '../data/data.js'
 import { arrayUnion, doc, updateDoc } from 'firebase/firestore';
 
 
