@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { AiOutlineMenu, AiOutlineSearch, AiOutlineTags } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineTags } from 'react-icons/ai';
 import { BsFillCartFill } from 'react-icons/bs';
 import {TbTruckDelivery} from 'react-icons/tb';
 import {FiKey} from 'react-icons/fi';
